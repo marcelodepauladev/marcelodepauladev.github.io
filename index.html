@@ -1,88 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt_br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora ETEC</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="calculadora.js" defer></script>
+    <link rel="stylesheet" href="calculadora.css">
 </head>
 <body>
-    <h4>You might think you've peeped the scene<br>
-        You haven't, the real one's far too mean<br>
-        The watered-down one, the one you know<br>
-        Was made up centuries ago<br>
-        They made it sound all wack and corny<br>
-        Yes, it's awful blasted boring<br>
-        Twisted fictions, sick addiction<br>
-        Well, gather 'round, children, zip it, listen<br>
-        Can we get much higher? (So high)<br>
-        Oh, oh, oh<br>
-        Oh, oh, oh-oh, oh, oh<br>
-        Can we get much higher? (So high)<br>
-        Oh, oh, oh<br>
-        Oh, oh, oh-oh, oh<br>
-        Can we get much higher? (So high)<br>
-        Oh, oh, oh<br>
-        Oh, oh, oh-oh, oh, oh<br>
-        Can we get much higher? (So high)<br>
-        Oh, oh, oh<br>
-        Oh, oh, oh-oh, oh<br>
-        Yeah, yeah, yeah, yeah<br>
-        I fantasized 'bout this back in Chicago<br>
-        Mercy, mercy me, that Murcielago<br>
-        That's me, the first year that I blow<br>
-        How you say broke in Spanish? Me, no hablo<br>
-        Me drown sorrow in that Diablo<br>
-        Me found bravery in my bravado<br>
-        DJs need to listen to the models<br>
-        "You ain't got no fuckin' Yeezy in your Serato?"<br>
-        Stupid, but what the hell do I know?<br>
-        I'm just a Chi-town nigga with a Nas flow<br>
-        And my chick in that new Phoebe Philo<br>
-        So much head, I woke up to Sleepy Hollow<br>
-        Can we get much higher?<br>
-        Oh, oh, oh<br>
-        Oh, oh, oh-oh, oh, oh<br>
-        Look like a fat booty Céline Dion<br>
-        Sex is on fire, I'm the King of Leon-a Lewis<br>
-        Beyond the truest, hey, teacher, teacher<br>
-        Tell me, how do you respond to students?<br>
-        And refresh the page and restart the memory?<br>
-        Respark the soul and rebuild the energy?<br>
-        We stopped the ignorance, we killed the enemies<br>
-        Sorry for the night demons that still visit me<br>
-        The plan was to drink until the pain over<br>
-        But what's worse, the pain or the hangover?<br>
-        Fresh air, rollin' down the window<br>
-        Too many Urkels on your team, that's why your wins low<br>
-        Don't make me pull the toys out, huh<br>
-        Don't make me pull the toys<br>
-        And fire up the engines, huh<br>
-        And then they make noise<br>
-        Can we get much higher? So high<br>
-        Oh, oh, oh<br>
-        Oh, oh, oh-oh, oh, oh<br>
-        At the mall, there was a séance<br>
-        Just kids, no parents<br>
-        Then the sky filled with herons<br>
-        (I saw the devil) in a Chrysler LeBaron<br>
-        And the hell, it wouldn't spare us<br>
-        And the fires did declare us<br>
-        But after that, took pills, kissed an heiress<br>
-        And woke up back in Paris<br>
-        Can we get much higher? (So high)<br>
-        Oh, oh, oh<br>
-        Oh, oh, oh-oh, oh, oh<br>
-        Can we get much higher? (So high)<br>
-        Oh, oh, oh<br>
-        Oh, oh, oh-oh, oh, oh<br>
-        Can we get much higher? (So high)<br>
-        Oh, oh, oh<br>
-        Oh, oh, oh-oh, oh<br>
-        Can we get much higher? (So high)<br>
-        Oh, oh, oh<br>
-        Oh, oh, oh-oh, oh, oh<br>
-        Can we get much higher? (So high)<br>
-        Oh, oh, oh<br>
-        Oh, oh, oh-oh, oh</h4>
+
+    <div id="calculadora_corpo">
+        <h2>Calculadora Básica</h2>
+
+        <label for="numero1">Digite o 1° número</label>
+        <input type="text" id="numero1" value="">
+        <div class="erro"></div>
+
+        <br>
+        <label for="numero2">Digite o 2° número</label>
+        <input type="text" id="numero2" value="">
+        <div class="erro"></div>
+
+        <h3>Escolha a operação:</h3>
+        <div id="btn_operacao">
+            <button type="button" id="mais">Somar</button>
+            <button type="button" id="menos">Subtrair</button>
+            <button type="button" id="vezes">Vezes</button>
+            <button type="button" id="dividir">Dividir</button>
+        </div>
+
+        <h3>Resultado</h3>
+        <input type="text" id="resultado" value="" readonly>
+        <br>
+        <button type="button" id="limpar">Limpar</button>
+        <br>
+        <button onclick="alternarTema()">Alterar Tema</button>
+    </div>
+
 </body>
 </html>
